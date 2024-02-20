@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servlet 복습 프로젝트</title>
+</head>
+<body>
+    <h1>조훈희의 Servlet 복습 프로젝트</h1>
+    <form action="/orderPizza" method="get">
+        <h3>피자 주문하기</h3>
+        피자 선택 : 
+        <select name="pizza">
+            <option value="후라이드">치즈피자(10000)</option>
+            <option value="양념">(11000)</option>
+            <option value="마늘">마늘(12000)</option>
+            <option value="간장">간장(12000)</option>
+        </select>
+        <br>
+        뼈/순살 : 
+        뼈 <input type="radio" name="type" value="bone"> / 순살(+2000) <input type="radio" name="type" value="boneless">
+        <br>
+
+        기타 옵션 : <br>
+        <input type="checkbox" name="opt" value="치킨무"> 치킨무 추가(+500)
+        <br>
+        <input type="checkbox" name="opt" value="콜라"> 콜라 추가(+2000)
+        <br>
+        <input type="checkbox" name="opt" value="치즈볼"> 치즈볼 추가(+3000)
+        <br>
+        
+        주문자 : <input type="text" name="ordererName"><br>
+        주소 : <input type="text" name="ordererAddress" size="50"> <br>
+        <button>주문하기</button>
+    </form>
+</body>
+</html>
