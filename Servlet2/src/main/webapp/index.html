@@ -8,25 +8,25 @@
 <body>
     <h1>조훈희의 Servlet 복습 프로젝트</h1>
     <form action="/orderPizza" method="get">
-        <h3>피자 주문하기</h3>
+        <h3>피자스쿨</h3>
         피자 선택 : 
         <select name="pizza">
-            <option value="후라이드">치즈피자(10000)</option>
-            <option value="양념">(11000)</option>
-            <option value="마늘">마늘(12000)</option>
-            <option value="간장">간장(12000)</option>
+            <option value="치즈피자">치즈피자(8900)</option>
+            <option value="불고기피자">불고기피자(11900)</option>
+            <option value="포테이토피자">포테이토피자(11900)</option>
+            <option value="스테이크피자">스테이크피자(13900)</option>
         </select>
         <br>
-        뼈/순살 : 
-        뼈 <input type="radio" name="type" value="bone"> / 순살(+2000) <input type="radio" name="type" value="boneless">
+        크러스트 : 
+        기본 <input type="radio" name="type" value="crust" checked="checked"> / 치즈크러스트(+3000) <input type="radio" name="type" value="cheesecrust">
         <br>
 
         기타 옵션 : <br>
-        <input type="checkbox" name="opt" value="치킨무"> 치킨무 추가(+500)
+        <input type="checkbox" name="opt" value="치즈오븐크림스파게티"> 치즈오븐크림스파게티 추가(+6900)
         <br>
         <input type="checkbox" name="opt" value="콜라"> 콜라 추가(+2000)
         <br>
-        <input type="checkbox" name="opt" value="치즈볼"> 치즈볼 추가(+3000)
+        <input type="checkbox" name="opt" value="갈릭디핑소스"> 갈릭디핑소스 추가(+500)
         <br>
         
         주문자 : <input type="text" name="ordererName"><br>
