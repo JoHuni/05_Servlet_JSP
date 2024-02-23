@@ -12,6 +12,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/todo-search")
 public class TodoServlet extends HttpServlet{
@@ -35,6 +36,8 @@ public class TodoServlet extends HttpServlet{
 			else {
 				String message = String.format("%s는 존재하지 않습니다", title);
 				resp.sendRedirect("/todo/error");
+				HttpSession session = req.getSession();
+				session.setAttribute("message", message);
 			}
 		}
 		catch (Exception e) {
